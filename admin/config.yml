@@ -13,10 +13,8 @@ collections:
     label: "notes"
     folder: "notes"
     create: true
-    nested:
-      depth: 100
     editor:
-      preview: true
+      preview: false
     fields:
       - { label: "title", name: "title", widget: "string" }
       - { label: "publish date", name: "date", widget: "datetime" }
