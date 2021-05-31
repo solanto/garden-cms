@@ -13,11 +13,16 @@ collections:
     label: "notes"
     folder: "notes"
     create: true
-    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    nested:
+      depth: 100
     editor:
       preview: false
     fields:
-      - { label: "Title", name: "title", widget: "string" }
-      - { label: "Publish Date", name: "date", widget: "datetime" }
-      - { label: "Description", name: "description", widget: "string" }
-      - { label: "Body", name: "body", widget: "markdown" }
+      - { label: "title", name: "title", widget: "string" }
+      - { label: "publish date", name: "date", widget: "datetime" }
+      - { label: "slug", name: "slug", widget: "string" }
+    
+  - name: "assets"
+    label: "assets"
+    folder: "assets"
+    create: true
