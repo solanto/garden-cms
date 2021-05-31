@@ -16,13 +16,9 @@ collections:
     nested:
       depth: 100
     editor:
-      preview: false
+      preview: true
     fields:
       - { label: "title", name: "title", widget: "string" }
       - { label: "publish date", name: "date", widget: "datetime" }
       - { label: "slug", name: "slug", widget: "string" }
-    
-  - name: "assets"
-    label: "assets"
-    folder: "assets"
-    create: true
+      
