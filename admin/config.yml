@@ -2,7 +2,7 @@ backend:
   name: github
   repo: solanto/garden # CHANGE ME
   branch: main
-  base_url: https://garden.solanto.me # CHANGE ME
+  base_url: https://cms.garden.solanto.me # CHANGE ME
   auth_endpoint: api/auth
 
 media_folder: /assets
