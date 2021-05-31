@@ -1,17 +1,17 @@
 backend:
   name: github
-  repo: robinpokorny/netlify-cms-now # CHANGE ME
-  branch: master
-  base_url: https://netlify-cms-now.now.sh # CHANGE ME
+  repo: solanto/garden # CHANGE ME
+  branch: main
+  base_url: https://garden.solanto.me # CHANGE ME
   auth_endpoint: api/auth
 
-media_folder: /img
-public_folder: /img
+media_folder: /assets
+public_folder: /assets
 
 collections:
-  - name: "blog"
-    label: "Blog"
-    folder: "blog"
+  - name: "notes"
+    label: "notes"
+    folder: "notes"
     create: true
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     editor:
