@@ -8,16 +8,15 @@ backend:
 media_folder: /assets
 public_folder: /assets
 
-collections:
+collections:net
   - name: "notes"
     label: "notes"
     folder: "notes"
     create: true
-    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     editor:
       preview: false
     fields:
-      - { label: "Title", name: "title", widget: "string" }
-      - { label: "Publish Date", name: "date", widget: "datetime" }
-      - { label: "Description", name: "description", widget: "string" }
-      - { label: "Body", name: "body", widget: "markdown" }
+      - { label: "slug", name: "slug", widget: "string" }
+      - { label: "publish date", name: "date", widget: "datetime" }
+      - { label: "icon", name: "icon", widget: "string" }
+      - { label: "body", name: "body", widget: "markdown" }
