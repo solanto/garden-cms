@@ -1,8 +1,8 @@
 backend:
   name: github
-  repo: solanto/garden
+  repo: solanto/garden # CHANGE ME
   branch: main
-  base_url: https://cms.garden.solanto.me
+  base_url: https://cms.garden.solanto.me # CHANGE ME
   auth_endpoint: api/auth
 
 media_folder: /assets
@@ -13,13 +13,11 @@ collections:net
     label: "notes"
     folder: "notes"
     create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     editor:
       preview: false
-    slug:
-      encoding: "ascii"
-      clean_accents: true
     fields:
-      - { label: "title", name: "title", widget: "string" }
-      - { label: "publish date", name: "date", widget: "datetime" }
-      - { label: "icon", name: "icon", widget: "string" }
-      - { label: "body", name: "body", widget: "markdown" }
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Publish Date", name: "date", widget: "datetime" }
+      - { label: "Description", name: "description", widget: "string" }
+      - { label: "Body", name: "body", widget: "markdown" }
